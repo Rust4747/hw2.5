@@ -2,7 +2,7 @@ public class Bus extends Transport {
 
     private Capacity capacity;
     public Bus(String brand, String model, float enginevolume, Capacity capacity) {
-        super(brand, model, enginevolume);
+        super(brand, model,  enginevolume);
         this.capacity = capacity;
     }
 
