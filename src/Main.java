@@ -24,7 +24,7 @@ public class Main {
 
     }
     private static void printInfo (Transport transport) {
-        System.out.println(transport.getBrand()+"  "+transport.getModel()+"  "+transport.getEnginevolume());
+        System.out.println(transport.getBrand()+" "+transport.getModel()+"  "+transport.getEnginevolume());
         transport.printType();
     }
 }

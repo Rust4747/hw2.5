@@ -8,7 +8,7 @@ public enum Capacity {
     EXTRA_LARGE(100, 120);
 
 
-    private int from;
+    private  int from;
     private int to;
 
     public int getFrom() {

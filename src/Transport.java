@@ -35,7 +35,7 @@ public abstract class Transport {
     public String toString() {
         return "Transport{" +
                 "brand='" + brand + '\'' +
-                ", model='" + model + '\'' +
+                ", model=' " + model + '\'' +
                 ", enginevolume=" + enginevolume +
                 '}';
     }
