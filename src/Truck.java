@@ -26,4 +26,9 @@ public class Truck extends Transport{
             System.out.println(from + to);
         }
     }
+
+    @Override
+    public boolean service() {
+        return Math.random() > 0.75;
+    }
 }

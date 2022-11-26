@@ -1,3 +1,7 @@
+import driver.Driver;
+import driver.DriverB;
+import jdk.jfr.Category;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -13,6 +17,10 @@ public class Main {
 
         Bus kamaz = new Bus("kamaz","5469",6.8f,Capacity.MEDIUM);
 
+        service(mers,bmw,volvo,kamaz);
+
+
+
         printInfo(mers);
         printInfo(volvo);
         printInfo(kamaz);
@@ -23,6 +31,19 @@ public class Main {
 
 
     }
+
+    private static void service (Transport... transports) {
+        for (Transport transport : transports) {
+            if (!transport.service()) {
+                try {
+                    throw new RuntimeException("" + transport.getBrand() + ""+ transport.getModel()+"");
+                } catch (RuntimeException e) {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+    }
+
     private static void printInfo (Transport transport) {
         System.out.println(transport.getBrand()+" "+transport.getModel()+"  "+transport.getEnginevolume());
         transport.printType();

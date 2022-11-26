@@ -24,4 +24,9 @@ public class Car extends  Transport{
             System.out.println(typeBody);
         }
     }
+
+    @Override
+    public boolean service() {
+        return Math.random() > 0.5;
+    }
 }
