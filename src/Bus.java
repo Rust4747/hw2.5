@@ -12,6 +12,12 @@ public class Bus extends Transport {
         return true;
     }
 
+    @Override
+    public void repair() {
+        System.out.println("автобус" + getBrand()+getModel()+"починена");
+
+    }
+
     public Capacity getCapacity() {
         return capacity;
     }

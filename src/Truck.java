@@ -31,4 +31,10 @@ public class Truck extends Transport{
     public boolean service() {
         return Math.random() > 0.75;
     }
+
+    @Override
+    public void repair() {
+        System.out.println("грузовик" + getBrand()+getModel()+"починен");
+
+    }
 }
