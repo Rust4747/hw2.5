@@ -14,7 +14,7 @@ public class Bus extends Transport {
 
     @Override
     public void repair() {
-        System.out.println("автобус" + getBrand()+getModel()+"починена");
+        System.out.println("автобус" + getBrand()+getModel()+" починена");
 
     }
 

@@ -27,5 +27,6 @@ public class Mechanic<T extends Transport> {
     public void repair(T t){
         t.repair();
 
+
     }
 }

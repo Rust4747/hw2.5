@@ -16,9 +16,6 @@ public class Main {
         mers.addMechanic(ivan);
         mers.addSponsore(shell);
 
-
-
-
         Car bmw = new Car("bmw","z4",3.0f,TypeBody.COUPE);
 
 
@@ -32,6 +29,16 @@ public class Main {
 
 
         List<Transport> transports = List.of(mers,bmw,volvo,kamaz);
+        ServiceStation servicaStation = new ServiceStation();
+        servicaStation.addCar(mers);
+        servicaStation.addCar(bmw);
+        servicaStation.addTruck(volvo);
+        servicaStation.service();
+        servicaStation.service();
+        servicaStation.service();
+
+
+
         for (Transport transport : transports) {
             printInfo(transport);
         }

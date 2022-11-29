@@ -27,11 +27,12 @@ public class Car extends  Transport{
 
     @Override
     public boolean service() {
-        return Math.random() > 0.5;
+        return Math.random() > 0.7;
     }
 
     @Override
     public void repair() {
         System.out.println("машина" + getBrand()+getModel()+"починена");
+
     }
 }

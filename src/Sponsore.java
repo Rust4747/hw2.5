@@ -18,6 +18,6 @@ public class Sponsore {
     }
 
     public void sponsoredRace() {
-        System.out.printf("спонсор %s пронспонсировал заезд на %d%n", name , amount);
+        System.out.printf("спонсор %s пронспонсировал  заезд на %d%n", name , amount);
     }
 }
