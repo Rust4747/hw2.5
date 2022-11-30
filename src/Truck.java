@@ -18,7 +18,7 @@ public class Truck extends Transport{
     @Override
     public void printType() {
         if (weigth==null){
-            System.out.println("Данных  недостаточно ");
+            System.out.println("Данных недостаточно ");
 
         }else {
             String from = weigth.getFrom() == null? "" : "от " +weigth.getFrom();

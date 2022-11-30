@@ -29,5 +29,6 @@ public class ServiceStation {
     }
     public void addTruck(){
 
+
     }
 }

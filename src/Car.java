@@ -19,7 +19,7 @@ public class Car extends  Transport{
     @Override
     public void printType() {
         if (typeBody==null){
-            System.out.println("Данных  недостаточно");
+            System.out.println("Данных недостаточно");
         } else {
             System.out.println(typeBody);
         }
